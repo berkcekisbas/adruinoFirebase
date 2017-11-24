@@ -1,13 +1,9 @@
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
 
-// firebase url 
 #define FIREBASE_HOST "takimyildizi-652f0.firebaseio.com"
-//firebase realtime database token
 #define FIREBASE_AUTH "1ygiXXsbtqilUYDGKh34EqKxnEMQBZCZ0UfoMuPt"
-//Wifi adi
 #define WIFI_SSID "***"
-//Wifi Sifre
 #define WIFI_PASSWORD "***"
 #define LED LED_BUILTIN
 
@@ -31,9 +27,7 @@ void setup() {
 }
 
 void loop() {
-  //Firebase den LedStatus alanını çekiyoruz
   Serial.println(Firebase.getInt("LEDStatus"));
-  //0 ise aç 1 ise kapat :)
   if(Firebase.getInt("LEDStatus"))
   {  
     digitalWrite(LED,HIGH);
