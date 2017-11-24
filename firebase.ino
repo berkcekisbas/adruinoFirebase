@@ -2,7 +2,7 @@
 #include <FirebaseArduino.h>
 
 #define FIREBASE_HOST "takimyildizi-652f0.firebaseio.com"
-#define FIREBASE_AUTH "1ygiXXsbtqilUYDGKh34EqKxnEMQBZCZ0UfoMuPt"
+#define FIREBASE_AUTH "***"
 #define WIFI_SSID "***"
 #define WIFI_PASSWORD "***"
 #define LED LED_BUILTIN
